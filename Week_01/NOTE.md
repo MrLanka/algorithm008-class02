@@ -20,7 +20,7 @@
     对于stack我们可以使用python内置的list实现，因为list是属于线性数组，在末尾插入和删除一个元素所使用的时间都是O(1),这非常符合stack的要求。当然，我们也可以使用链表来实现。
 
     stack的实现代码（使用python内置的list），实现起来是非常的简单，就是list的一些常用操作:
-        class Stack(object):
+    class Stack(object):
         def __init__(self):
             self.stack = []
 
