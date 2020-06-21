@@ -11,6 +11,7 @@
 3. 进阶版动态规划的习题
 
 递归 - 函数自己调用自己
+
 def recur(int level, int param)：
     // terminator 
     if (level > MAX_LEVEL) ：
@@ -26,6 +27,7 @@ def recur(int level, int param)：
 
 
 分治代码模板——分而治之
+
 def divide_conquer(problem, param1, param2, ...): 
     # recursion terminator 
     if problem is None: 
@@ -45,7 +47,7 @@ def divide_conquer(problem, param1, param2, ...):
     # revert the current level states
 
 
-    感触
+ 
 1. 人肉递归低效、很累
 
 2. 找到最近最简方法，将其拆解成可重复解决的问题
@@ -57,6 +59,7 @@ def divide_conquer(problem, param1, param2, ...):
 
 
 动态规划 Dynamic Programming
+
 1.“Simplifying a complicated problem by breaking it down into 
 simpler sub-problems” 
 (in a recursive manner)
@@ -68,6 +71,7 @@ simpler sub-problems”
 
 
 DP 顺推模板
+
 function DP(): 
     dp = [][] # ⼆维情况 
     for i = 0 .. M { 
@@ -79,6 +83,7 @@ function DP():
 
 
 关键点
+
 动态规划 和 递归或者分治 没有根本上的区别（关键看有无最优的子结构） 
 拥有共性：找到重复子问题
 
@@ -90,6 +95,7 @@ function DP():
 ###高阶的 DP 问题
 
 复杂度来源
+
 1. 状态拥有更多维度（二维、三维、或者更多、甚至需要压缩）
 
 2. 状态方程更加复杂
@@ -123,14 +129,18 @@ class Solution(object):
 
 
 字符串
+
 • Python: ——————————不可变的
+
 x = ‘abbc’ 
 x = “abbc”
 
 遍历字符串
+
 • Python: 
+
 for ch in “abbc”: 
- print(ch)
+    print(ch)
 
 
 
@@ -147,6 +157,7 @@ for ch in “abbc”:
  ###字符串匹配算法
 
  字符串匹配算法
+ 
 1. 暴力法（brute force） - O(mn)
 
 2. Rabin-Karp 算法
